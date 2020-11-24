@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ab"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/WINEER_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THE WINNER IS:"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/winPlayer_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/WINEER_LBL"
+        android:textColor="@color/black"
+        android:textSize="44sp" />
+
+</RelativeLayout>
