@@ -21,14 +21,21 @@
         android:textColor="@color/cardview_light_background"
         ></TextView>
 
-    <ImageButton
-        android:id="@+id/game_IMGBTN_play"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:src="@android:drawable/ic_media_play"
-        ></ImageButton>
+        android:layout_width="297dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="360dp"
+        android:indeterminate="false"
+        android:max="28"
+        android:minHeight="50dp"
+        android:padding="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" />
 
     <ImageView
         android:id="@+id/game_IMG_playerLeft"

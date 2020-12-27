@@ -2,30 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/poker54"
         android:label="CASINO GAME"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity
-            android:name=".Winner_Activity"
-            android:label="@string/title_activity_winner_"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA3IbvZzR4BCfGEjYZ_T9dxTIKuw28m2DM"/>
+
 
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"
+            android:name=".WelcomeActivity"
+            android:configChanges="orientation"
             >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+           />
+        <activity
+            android:name=".RecordActivity"
+            android:configChanges="orientation"
+            />
+
+
     </application>
+
 
 </manifest>
